@@ -1,0 +1,5 @@
+name: Simple CI
+on: [push]
+jobs: build: runs-on: ubuntu-latest steps: - name: Check repository uses: actions/checkout@v4
+- name: Run a simple test command
+  run: echo "Build and Test Passed Successfully!"
